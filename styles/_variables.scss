@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// Font
+$font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+// Dark palette
+$bg-start-dark: #0f172a; // slate-900
+$bg-end-dark: #1e293b; // slate-800
+$surface-dark: rgba(11, 18, 32, 0.67);
+$surface-strong-dark: rgba(11, 18, 32, 0.93);
+$text-dark: #e5e7eb; // gray-200
+$muted-dark: #9ca3af; // gray-400
+$primary-dark: #60a5fa; // blue-400
+$accent-dark: #22d3ee; // cyan-400
+$danger-dark: #f87171; // red-400
+$outline-dark: rgba(255, 255, 255, 0.08);
+
+// Light palette
+$bg-start-light: #e6f0ff;
+$bg-end-light: #ffffff;
+$surface-light: rgba(255, 255, 255, 0.8);
+$surface-strong-light: #ffffff;
+$text-light: #0f172a; // slate-900
+$muted-light: #475569; // slate-600
+$primary-light: #2563eb; // blue-600
+$accent-light: #0891b2; // cyan-600
+$danger-light: #dc2626; // red-600
+$outline-light: rgba(2, 6, 23, 0.08);
+
+// Easing
+$transition-fast: 0.15s ease;
+$shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+// varsayılam tema (dark) için temel değişkenleri tanımla
+:root {
+  --bg-start: #{$bg-start-dark};
+  --bg-end: #{$bg-end-dark};
+  --surface: #{$surface-dark};
+  --surface-strong: #{$surface-strong-dark};
+  --text: #{$text-dark};
+  --muted: #{$muted-dark};
+  --primary: #{$primary-dark};
+  --accent: #{$accent-dark};
+  --danger: #{$danger-dark};
+  --outline: #{$outline-dark};
+}
+
+// açık tema için root değişkenlerin değiştir
+[data-theme="light"] {
+  --bg-start: #{$bg-start-light};
+  --bg-end: #{$bg-end-light};
+  --surface: #{$surface-light};
+  --surface-strong: #{$surface-strong-light};
+  --text: #{$text-light};
+  --muted: #{$muted-light};
+  --primary: #{$primary-light};
+  --accent: #{$accent-light};
+  --danger: #{$danger-light};
+  --outline: #{$outline-light};
+}
